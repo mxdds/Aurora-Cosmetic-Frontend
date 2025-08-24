@@ -1,11 +1,6 @@
-
-.main-content {
-    background-color: rgb(246, 246, 243);
-    padding: 2rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 2rem;
-    min-height: 26rem;
-    display: flex;
+.main-content{
+    background-color: rgb(218,215,203);
+    padding: 2px;
+    width: auto;
+    height: auto;
 }

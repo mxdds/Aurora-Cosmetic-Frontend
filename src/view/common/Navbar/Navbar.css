@@ -1,56 +1,84 @@
-
 .navbar {
-    background-color: rgb(68 69 68);
+    padding: 15px 20px;
+    background: linear-gradient(90deg, rgb(68, 69, 70), rgb(50, 50, 50));
     color: white;
-    padding: 2rem;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 2rem;
     display: flex;
+    align-items: center;
+    justify-content: space-between; /* Center the navigation items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-li {
-    display: inline-block;
-    padding-right: 20px;
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Increased gap for better spacing */
+    margin: 0;
+    padding: 0;
 }
 
-li a {
-    color: white;
+.navbar li {
+    margin-left: 20px;
+    display: inline;
+}
+
+.navbar a {
+    font-family: 'Arial', sans-serif;
+    color: #43e68e;
     text-decoration: none;
-}
-li a:hover {
-    color: #1f9e4b;
-}
-
-.btn-sign-in {
-    background-color: #1f9e4b;
-    color: #f0ecec;
-    height: auto;
-    width: auto;
-    border-radius: 10px;
-    border-color: white;
-    font-size: 2rem;
-    padding: 12px;
-    margin-left: 2rem;
-    float: right;
+    font-size: 1.2rem; /* Slightly larger font size */
+    font-weight: 500; /* Added font weight for better readability */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.btn-sign-in a {
-    text-decoration: none;
-    color: #f0ecec;
+.navbar a:hover {
+    color: #2ecc71;
+    transform: scale(1.1);
+    text-decoration: underline;
 }
 
-.icon {
-    height: 3rem;
-    width: 3rem;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Stack items vertically on smaller screens */
+        padding: 10px;
+    }
 
-.business-name {
-    padding-left: 5px;
+    .navbar ul {
+        flex-direction: row;
+        gap: 15px; /* Adjust gap for vertical layout */
+    }
+}
+.button {
+    margin-left: 20px;
+    background-color: #ffffff;
     color: white;
-    margin-right: 4rem;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.business-name:hover {
-    color: #1f9e4b;
+.imgnav{
+    /*display: flex;*/
+    width: 80px;
+    height: 80px;
+    /*border-radius: 50%;*/
+    /*margin-right: 520px;*/
+    cursor: pointer;
+    /*align-content: flex-start;*/
+    /*align-self: self-start;*/
+}
+.nav-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-left: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-family: 'Arial', sans-serif; /* Changed font family for better readability */
+}
+.nav-title:hover {
+    color: #2ecc71;
+    transform: scale(1.1);
+    /*text-decoration: underline;*/
 }

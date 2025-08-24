@@ -1,13 +1,15 @@
-import {Navbar} from "../Navbar/Navbar.tsx";
 import {MainContent} from "../MainContent/MainContent.tsx";
-import {Footer} from "../Footer/Footer.tsx";
+import Footer from "../Footer/Footer.tsx";
+import Navbar from "../Navbar/Navbar.tsx";
 
 export function DefaultLayout() {
     return (
-        <>
-            <Navbar />
-            <MainContent />
-            <Footer />
-        <>
+        <div className="flex flex-col min-h-screen">
+            <Navbar/>
+            <main className="flex-grow">
+                <MainContent/>
+            </main>
+            <Footer/>
+        </div>
     );
 }
