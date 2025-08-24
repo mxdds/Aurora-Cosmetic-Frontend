@@ -204,4 +204,4 @@ For support and questions:
 
 ---
 
-**Aurora Cosmetic Frontend** - Built with ❤️ using React and modern web technologies
+**Aurora Cosmetic Frontend-** - Built with ❤️ using React and modern web technologies
